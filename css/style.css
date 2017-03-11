@@ -1,0 +1,23 @@
+h1 {
+	text-align: center;
+}
+
+section {
+	display: flex;
+}
+
+article{
+	text-align: center;
+}
+div {
+	padding: 40px;
+
+}
+.chiffre {
+	font-size: 40px;
+	margin: 2%;
+}
+.center {
+	margin-top: 5%;
+}
+
