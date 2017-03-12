@@ -1,111 +1,38 @@
 // Valeur A
-$("#V1").click(function(){
+
+$("#V1, #V2, #V3, #V4, #V5, #V6, #V7, #V8, #V9, #V0, #Vc").click(function(){
     var text= $("#nombre_a");
-    text.val(text.val()+ ("1"));
-});
-$("#V2").click(function(){
-    var text= $("#nombre_a");
-    text.val(text.val()+ ("2"));
-});
-$("#V3").click(function(){
-    var text= $("#nombre_a");
-    text.val(text.val()+ ("3"));
-});
-$("#V4").click(function(){
-    var text= $("#nombre_a");
-    text.val(text.val()+ ("4"));
-});
-$("#V5").click(function(){
-    var text= $("#nombre_a");
-    text.val(text.val()+ ("5"));
-});
-$("#V6").click(function(){
-    var text= $("#nombre_a");
-    text.val(text.val()+ ("6"));
-});
-$("#V7").click(function(){
-    var text= $("#nombre_a");
-    text.val(text.val()+ ("7"));
-});
-$("#V8").click(function(){
-    var text= $("#nombre_a");
-    text.val(text.val()+ ("8"));
-});
-$("#V9").click(function(){
-    var text= $("#nombre_a");
-    text.val(text.val()+ ("9"));
-});
-$("#V0").click(function(){
-    var text= $("#nombre_a");
-    text.val(text.val()+ ("0"));
+    text.val(text.val()+ (this).value);
 });
 
 // Valeur B
-$("#B1").click(function(){
+
+$("#B1, #B2, #B3, #B4, #B5, #B6, #B7, #B8, #B9, #B0, #Bc").click(function(){
     var text= $("#nombre_b");
-    text.val(text.val()+ ("1"));
-});
-$("#B2").click(function(){
-    var text= $("#nombre_b");
-    text.val(text.val()+ ("2"));
-});
-$("#B3").click(function(){
-    var text= $("#nombre_b");
-    text.val(text.val()+ ("3"));
-});
-$("#B4").click(function(){
-    var text= $("#nombre_b");
-    text.val(text.val()+ ("4"));
-});
-$("#B5").click(function(){
-    var text= $("#nombre_b");
-    text.val(text.val()+ ("5"));
-});
-$("#B6").click(function(){
-    var text= $("#nombre_b");
-    text.val(text.val()+ ("6"));
-});
-$("#B7").click(function(){
-    var text= $("#nombre_b");
-    text.val(text.val()+ ("7"));
-});
-$("#B8").click(function(){
-    var text= $("#nombre_b");
-    text.val(text.val()+ ("8"));
-});
-$("#B9").click(function(){
-    var text= $("#nombre_b");
-    text.val(text.val()+ ("9"));
-});
-$("#B0").click(function(){
-    var text= $("#nombre_b");
-    text.val(text.val()+ ("0"));
+    text.val(text.val()+ (this).value);
 });
 
 
-
-
-
-$( "#addition" ).click(function addition (){
+$( "#addition" ).click(function(){
 	var nombre_a = document.getElementById('nombre_a').value;
     var nombre_b = document.getElementById('nombre_b').value;
     alert(parseInt(nombre_a)+parseInt(nombre_b));
 });
 
-$( "#soustraction" ).click(function soustraction() {
+$( "#soustraction" ).click(function() {
  	var nombre_a = document.getElementById('nombre_a').value;
     var nombre_b = document.getElementById('nombre_b').value;
     alert(parseInt(nombre_a)-parseInt(nombre_b));
 });
 
-$( "#multiplication" ).click(function multiplication() {
+$( "#multiplication" ).click(function() {
  	var nombre_a = document.getElementById('nombre_a').value;
     var nombre_b = document.getElementById('nombre_b').value;
     alert(parseInt(nombre_a)*parseInt(nombre_b));
 });
 
 
-$( "#division" ).click(function division() {
+$( "#division" ).click(function() {
 	var nombre_a = document.getElementById('nombre_a').value;
     var nombre_b = document.getElementById('nombre_b').value;
     alert(parseInt(nombre_a)/parseInt(nombre_b));
@@ -113,19 +40,3 @@ $( "#division" ).click(function division() {
 
 
 
-
-function addition (a, b){
-	return a + b;
-};
-
-function soustraction(a, b) {
-	return a - b;
-};
-
-function multiplication(a, b) {
-	return a * b;
-};
-
-function division(a, b) {
-	return a / b;
-};
