@@ -18,7 +18,7 @@
 	<article>
 		<h2>Valeur 1</h2>
 
-		<input id="nombre_a" type="text" name="nombre1" value="" />
+		<input id="nombre_a" type="text" disabled="disabled" name="nombre1" value="" />
 
 			<div class="left">
 				<input id="V1" class="chiffre" type="button" value="1" name="1"/>
@@ -36,17 +36,8 @@
 	</article>
 
 	<article>
-		<div >
-			<input id="addition" class="center" type="button" value="Additionner" name="Additionner" />
-			<input id="soustraction" class="center" type="button" value="Soutraire" name="Soutraire" />
-			<input id="multiplication" class="center" type="button" value= "Multiplier" name="Multiplier"/>
-			<input id="division" class="center" type="button" value="Diviser" name="Diviser">
-		</div>
-	</article>
-
-	<article>
 		<h2>Valeur 2</h2>
-		<input id="nombre_b" type="text" name="nombre2" value="" />
+		<input id="nombre_b" type="text" disabled="disabled" name="nombre2" value="" />
 			<div class="right">
 				<input id="B1" class="chiffre" type="button" value="1" name="1"/>
 				<input id="B2" class="chiffre" type="button" value="2" name="2"/>
@@ -61,8 +52,22 @@
 				<input id="Bc" class="chiffre" type="button" name="C" value="C"/>
 			</div>
 	</article>
-</section>
+	
+	<article>
+		<div >
+			<input id="addition" class="center" type="button" value="Additionner" name="Additionner" />
+			<input id="soustraction" class="center" type="button" value="Soutraire" name="Soutraire" />
+			<input id="multiplication" class="center" type="button" value= "Multiplier" name="Multiplier"/>
+			<input id="division" class="center" type="button" value="Diviser" name="Diviser">
+		</div>
+	</article>
 
+	<article>
+		<h2>Resultat: </h2>
+		<input id="resultat" type="text" disabled="disabled" name="Resultat" value="" >		
+
+	</article>
+</section>
 
 <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
